@@ -41,6 +41,22 @@
   }
   </script>
 
+  <!-- Event snippet for Контакт conversion page -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18280948430/pfl2CMKx6sscEM7FhI1E',
+        'event_callback': callback
+      });
+      return false;
+    }
+  </script>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18269553484"></script>
   <script>

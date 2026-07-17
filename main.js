@@ -1,4 +1,4 @@
-/* MACHO — animations */
+/* BarbieSPA — animations */
 gsap.registerPlugin(ScrollTrigger);
 
 const isTouch = window.matchMedia('(hover: none), (pointer: coarse)').matches;

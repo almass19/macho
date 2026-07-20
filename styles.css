@@ -202,6 +202,13 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   color: var(--rose);
 }
 
+.hero-ctas {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
 .hero-cta {
   display: inline-flex; align-items: center; gap: 10px;
   font-family: var(--sans);
@@ -221,6 +228,18 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   border-color: var(--rose-light);
   transform: translateY(-2px);
   box-shadow: 0 10px 32px rgba(196,54,78,0.3);
+}
+
+.hero-cta--tg {
+  background: transparent;
+  border-color: #229ED9;
+  color: #229ED9;
+}
+.hero-cta--tg:hover {
+  background: #229ED9;
+  border-color: #229ED9;
+  color: #fff;
+  box-shadow: 0 10px 32px rgba(34,158,217,0.3);
 }
 
 /* Right col */
@@ -374,6 +393,15 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 .contact-tel:hover { color: var(--rose); }
 
+.contact-tg {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: var(--step--1);
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  transition: color 0.2s;
+}
+.contact-tg:hover { color: #229ED9; }
+
 .contact-meta {
   font-size: var(--step--1);
   color: var(--muted);
@@ -404,6 +432,12 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   font-size: var(--step--1);
   color: var(--muted);
   letter-spacing: 0.05em;
+}
+.footer-contacts {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 .footer-phone {
   font-size: var(--step--1);
@@ -480,6 +514,30 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .wa-widget:hover {
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 8px 28px rgba(37, 211, 102, 0.45);
+}
+
+/* =========================================
+   TELEGRAM WIDGET
+   ========================================= */
+.tg-widget {
+  position: fixed;
+  bottom: 96px;
+  right: 28px;
+  z-index: 200;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #229ED9;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(34, 158, 217, 0.35);
+  transition: transform 0.2s var(--ease-out), box-shadow 0.2s;
+}
+.tg-widget:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 28px rgba(34, 158, 217, 0.45);
 }
 
 /* Title clip for entrance animation */
